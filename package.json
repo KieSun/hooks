@@ -1,8 +1,10 @@
 {
   "name": "react-wonder-hooks",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "react custom hooks",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "dist/index.js",
   "scripts": {
     "test": "jest",
