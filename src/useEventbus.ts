@@ -15,6 +15,6 @@ export const emit = (event: string, ...args: any) => {
     }
 }
 
-export const useEventbus = (event: string, callback: Function, deps = []) => {
-    useEffect(() => subscribe(event, callback), deps)
+export const useEventbus = (event: string, callback: Function, deps?: ReadonlyArray<unknown>) => {
+    useEffect(() => subscribe(event, callback), deps || [])
 }
